@@ -49,7 +49,8 @@ body {
     margin: 0 20px;
 
 }
-.desktop-nav .menu-items li:nth-last-of-type(1){
+
+.desktop-nav .menu-items li:nth-last-of-type(1) {
     margin-right: 0;
 }
 
@@ -60,7 +61,8 @@ body {
     font-weight: bold;
     position: relative;
 }
-.desktop-nav .menu-items li a.active::after{
+
+.desktop-nav .menu-items li a.active::after {
     content: "";
     position: absolute;
     height: 3px;
@@ -71,12 +73,12 @@ body {
 }
 
 
-.desktop-nav .menu-items li a.btn{
+.desktop-nav .menu-items li a.btn {
     color: var(--light-color);
     border: 1px solid black;
 }
 
-a.btn{
+a.btn {
     background-color: var(--red-color);
     color: var(--light-color);
     border-radius: 24px;
@@ -84,49 +86,59 @@ a.btn{
     text-decoration: none;
     transition: background-color 400ms;
 }
-a.btn.cyan{
+
+a.btn.cyan {
     background-color: var(--cyan-color);
     color: var(--dark-color);
     font-weight: bold;
 }
-a.btn:hover{
+
+a.btn:hover {
     background-color: var(--red-hover-color);
 }
-a.btn.cyan:hover{
+
+a.btn.cyan:hover {
     background-color: var(--cyan-hover-color);
 }
+
 /* Hero Section */
-.hero-container{
+.hero-container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.hero-container .left{
+
+.hero-container .left {
     flex: 1;
 }
-.hero-container .left p{
+
+.hero-container .left p {
     font-size: 24px;
 }
-.hero-container .left h1{
+
+.hero-container .left h1 {
     font-size: 36px;
     font-family: "Montserrat", sans-serif;
     margin: 8px 0px 28px 0px;
 }
-.hero-container .left .gt{
+
+.hero-container .left .gt {
     color: var(--red-color);
 }
-.hero-container .left .btn{
+
+.hero-container .left .btn {
     margin-right: 20px;
 }
-.hero-container .right{
+
+.hero-container .right {
     padding-left: 30px;
 }
 
 
 /* Hero BG and Polygons */
 
-.hero-bg{
+.hero-bg {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -135,32 +147,36 @@ a.btn.cyan:hover{
 }
 
 
-.hero-container .polygon-cream{
+.hero-container .polygon-cream {
     position: absolute;
     z-index: -1;
     top: 150px;
     left: 440px;
 }
-.hero-container .polygon-gray{
+
+.hero-container .polygon-gray {
     position: absolute;
     z-index: -1;
     top: 190px;
     left: 770px;
 }
-.hero-container .polygon-whitish{
+
+.hero-container .polygon-whitish {
     position: absolute;
     z-index: -1;
     top: 300px;
     left: 700px;
 }
+
 /* Animation */
 
-.desktop-nav{
+.desktop-nav {
     opacity: 0;
     animation: fadeDown 1000ms forwards;
 }
+
 @keyframes fadeDown {
-    from{
+    from {
         opacity: 0;
         transform: translateY(-25px);
     }
@@ -171,56 +187,61 @@ a.btn.cyan:hover{
     }
 }
 
-.hero-container .left p{
+.hero-container .left p {
     animation: fadeIn 800ms forwards;
     opacity: 0;
     animation-delay: 400ms;
 }
-@keyframes fadeIn{
-    to{
+
+@keyframes fadeIn {
+    to {
         opacity: 1;
     }
 }
 
-.hero-container .left h1{
+.hero-container .left h1 {
     animation: fadeToRight 800ms forwards cubic-bezier(0.22, 0.32, 0, 1.54);
     opacity: 0;
     animation-delay: 800ms;
 }
 
-@keyframes fadeToRight{
-    from{
+@keyframes fadeToRight {
+    from {
         opacity: 0;
         transform: translateX(-100px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.hero-container .left .btn:nth-of-type(1){
+.hero-container .left .btn:nth-of-type(1) {
     animation: fadeIn 1000ms forwards;
     opacity: 0;
     animation-delay: 1400ms;
 }
-.hero-container .left .btn:nth-of-type(2){
+
+.hero-container .left .btn:nth-of-type(2) {
     animation: fadeIn 1000ms forwards;
     opacity: 0;
     animation-delay: 1600ms;
 }
 
-.hero-container .right{
+.hero-container .right {
     animation: fadeToLeft 1200ms forwards;
     opacity: 0;
     animation-delay: 900ms;
 }
+
 @keyframes fadeToLeft {
-    from{
+    from {
         opacity: 0;
         transform: translateX(30px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
@@ -228,7 +249,7 @@ a.btn.cyan:hover{
 
 .hero-container .polygon-cream,
 .hero-container .polygon-gray,
-.hero-container .polygon-whitish{
+.hero-container .polygon-whitish {
     opacity: 0;
     animation-name: fadeIn, rotate;
     animation-duration: 800ms, 80s;
@@ -237,11 +258,49 @@ a.btn.cyan:hover{
     animation-fill-mode: forwards;
     animation-timing-function: ease-in, linear;
 }
+
 @keyframes rotate {
-    from{
+    from {
         transform: rotate(360deg);
     }
-    to{
+
+    to {
         transform: rotate(0deg);
     }
+}
+
+/* Brands Section */
+
+.brands-section {
+    border-radius: 24px;
+    background: var(--light-color);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
+    padding: 32px 50px;
+    margin-top: 100px;
+}
+.brands-section .brands-container img{
+    height: 32px;   
+}
+
+.brands-section .brands-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands-section h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: var(--dark-color);
+    text-align: center;
+    position: relative;
+}
+.brands-section h2::after{
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 3px;
+    background: var(--red-color);
+    top: 40px;
+    transform: translateX(-43px);
 }

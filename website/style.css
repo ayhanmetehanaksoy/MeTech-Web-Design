@@ -24,14 +24,16 @@ body {
     padding: 0 100px;
 }
 
-p{
+p {
     line-height: 2;
     margin-bottom: 20px;
 }
-section{
+
+section {
     padding-top: 100px;
 }
-section p{
+
+section p {
     color: var(--dark-color);
 }
 
@@ -289,28 +291,28 @@ a.btn.cyan:hover {
     padding: 32px 50px;
     margin-top: 100px;
 }
-.brands-section .brands-container img{
-    height: 32px;   
+
+.brands-section .brands-container img {
+    height: 32px;
 }
 
-.brands-section .brands-container{
+.brands-section .brands-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .brands-section h2,
-section h2
-{
+section h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
     color: var(--dark-color);
     text-align: center;
     position: relative;
 }
+
 .brands-section h2::after,
-section h2::after
-{
+section h2::after {
     content: "";
     position: absolute;
     width: 43px;
@@ -322,57 +324,63 @@ section h2::after
 
 /* About Us */
 
-.about-section .section-content{
+.about-section .section-content {
     display: flex;
     align-items: center;
 }
 
-.about-section .section-content img{
+.about-section .section-content img {
     margin-left: 100px;
 }
 
 /* Projects Section */
 
-.projects-gallery{
+.projects-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px 18px;
     margin-bottom: 42px;
 }
-.projects-gallery img{
+
+.projects-gallery img {
     width: 100%;
     object-fit: cover;
 }
 
 /* Testimonails */
 
-.slide-container{
+.slide-container {
     display: flex;
     justify-content: space-between;
     width: 800px;
     margin: 0 auto;
 }
-.slide-container .content{
+
+.slide-container .content {
     padding: 8px;
 }
-.testimonial .name{
+
+.testimonial .name {
     display: inline-block;
     background-color: var(--dark-color);
     color: var(--light-color);
     padding: 8px 24px;
     margin-left: 60px;
 }
-.testimonials-container{
+
+.testimonials-container {
     position: relative;
 }
+
 .slider-prev,
-.slider-next{
+.slider-next {
     position: absolute;
     top: 68px;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06));
     border-radius: 50%;
     cursor: pointer;
 }
+
 .slider-next {
     right: 0;
 }

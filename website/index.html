@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="glider.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -161,6 +162,12 @@
                 </div>
                 <span class="slider-prev"><img src="images/slider-arrow-left.svg" alt=""></span>
                 <span class="slider-next"><img src="images/slider-arrow-right.svg" alt=""></span>
+
+                <div role="tablist" class="dots-container">
+                    <div class="dots"></div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -173,6 +180,19 @@
 
 
 
+
+    <script src="glider.min.js"></script>
+
+    <script>
+        new Glider(document.querySelector(".testimonials"), {
+            slidesToShow: 1,
+            dots: ".dots",
+            arrows: {
+                prev: ".slider-prev",
+                next: ".slider-next",
+            },
+        });
+    </script>
 
     <script src="main.js"></script>
 </body>

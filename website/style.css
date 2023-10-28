@@ -8,6 +8,10 @@
     --cyan-hover-color: #6af3e1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 8;
     box-sizing: border-box;
@@ -17,6 +21,7 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
 
 .wrapper {
     width: 1152px;
@@ -98,6 +103,10 @@ a.btn {
     padding: 14px 30px;
     text-decoration: none;
     transition: background-color 400ms;
+    /* display: inline-block; */
+}
+
+section a.btn{
     display: inline-block;
 }
 
@@ -455,7 +464,7 @@ footer a:hover {
 .footer-container .footer-social a {
     text-decoration: none;
     margin: 0 15px;
-
+    
 }
 
 .footer-container .footer-social a:first-child {

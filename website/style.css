@@ -493,7 +493,8 @@ footer a:hover {
 .copyright {
     text-align: center;
 }
-.desktop-nav .menu-icon{
+.desktop-nav .menu-icon,
+.mobile-nav{
     display: none;
 }
 
@@ -653,6 +654,42 @@ footer a:hover {
 
     .footer-container .logo{
         order: 2;
+    }
+
+    .mobile-nav{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        background: var(--dark-color);
+        right: 0;
+        z-index: 200;
+        opacity: 0;
+        pointer-events: none;
+        top: -100%;
+        transition: 400ms;
+    }
+
+    .mobile-nav.active{
+        opacity: 1;
+        pointer-events: auto;
+        top: 0;
+    }
+
+    .mobile-nav .menu-items{
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-nav .menu-items li{
+        margin: 20px 0;
+    }
+    .mobile-nav .menu-items li a{
+        color: var(--light-color);
+        text-decoration: none;
     }
 
 }

@@ -296,38 +296,22 @@ a.btn.cyan:hover {
     }
 }
 
-/* Brands Section */
+/* Services Section */
 
-.brands-section {
+.services-items{
+    display: flex;
+}
+
+.services-items .services-item {
+    width: 265px;
     border-radius: 24px;
     background: var(--light-color);
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
-    padding: 32px 50px;
-    margin-top: 100px;
+    margin: 20px;
+    text-align: center;
 }
 
-.brands-section .brands-container img {
-    height: 32px;
-}
 
-.brands-section .brands-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brands-container .brands-line-1{
-    display: flex;
-    justify-content: space-around;
-    flex: 2;
-}
-.brands-container .brands-line-2{
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-}
-
-.brands-section h2,
 section h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
@@ -336,7 +320,6 @@ section h2 {
     position: relative;
 }
 
-.brands-section h2::after,
 section h2::after {
     content: "";
     position: absolute;
@@ -384,6 +367,8 @@ section h2::after {
 .slide-container .content {
     padding: 8px;
 }
+
+
 
 .testimonial .name {
     display: inline-block;
@@ -562,34 +547,15 @@ footer a:hover {
         font-size: 16px;
     }
 
-    .brands-section{
-        border-radius: 0;
-        padding: 32px 0;
-    }
 
-    .brands-section h2,
     section h2{
         font-size: 24px;
     }
 
-    .brands-section h2::after,
     section h2::after{
         top: 100%;
         width: 40px;
         transform: translateX(-40px);
-    }
-    .brands-section .brands-container{
-        flex-direction: column;
-    }
-    .brands-section .brands-container img{
-        height: 24px;
-    }
-    .brands-section .brands-line-1{
-        width: 100%;
-        padding-bottom: 25px;
-    }
-    .brands-section .brands-line-2{
-        width: 60%;
     }
 
     /* About Us */

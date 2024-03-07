@@ -38,6 +38,7 @@ section {
     padding-top: 100px;
 }
 
+
 section p {
     color: var(--dark-color);
 }
@@ -298,6 +299,10 @@ a.btn.cyan:hover {
 
 /* Services Section */
 
+.services {
+    margin-top: 100px;
+}
+
 .services-items{
     display: flex;
 }
@@ -339,6 +344,9 @@ section h2::after {
 
 .about-section .section-content img {
     margin-left: 100px;
+}
+.about-section .section-content .about-description p{
+    text-align: center;
 }
 
 /* Projects Section */
